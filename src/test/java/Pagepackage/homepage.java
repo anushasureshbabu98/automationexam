@@ -67,5 +67,9 @@ public class homepage {
 		}
 		
 	}
+	public void details(String string, String string2, String string3, String string4) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

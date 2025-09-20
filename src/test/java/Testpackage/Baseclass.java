@@ -11,6 +11,8 @@ import Pagepackage.homepage;
 
 public class Baseclass {
 	public static 	WebDriver driver;
+	public static homepage ob;
+	public static Quickcontact qc;
 	
 	   @BeforeTest
 	   public void SetUp()
@@ -21,9 +23,10 @@ public class Baseclass {
 		   
 	   }
 	   @BeforeMethod
-	   public void beforemethod() {
-		   homepage ob=new homepage();
-		   Quickcontact qc=new Quickcontact();
+	   public void mtd() 
+	   {
+		    ob=new homepage(driver);
+		 qc=new Quickcontact();
 		   
 	   }
 	   

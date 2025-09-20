@@ -11,6 +11,7 @@ public class Quickcontact {
 	@FindBy(xpath="/html/body/div[3]/div/div/div[2]/div/div[1]/form/div[2]/input")WebElement phone;
 	@FindBy(xpath="/html/body/div[3]/div/div/div[2]/div/div[1]/form/div[3]/input")WebElement email;
 	@FindBy(xpath="/html/body/div[3]/div/div/div[2]/div/div[1]/form/div[4]/textarea")WebElement message;
+	@FindBy(xpath="/html/body/div[3]/div/div/div[2]/div/div[1]/form/input")WebElement sent;
 	public Quickcontact() {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
@@ -20,5 +21,6 @@ public class Quickcontact {
 		phone.sendKeys(ph);
 		email.sendKeys(em);
 		message.sendKeys(msg);
+		sent.click();
 	}
 }
